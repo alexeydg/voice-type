@@ -1,0 +1,34 @@
+# Voice Type — offline dictation settings
+#
+# Hotkey format (pynput): <f8>, <ctrl>+<alt>+<space>, <ctrl>+<shift>+v, …
+
+[general]
+# One key: 1st press = start listening, 2nd press = stop + paste into focused field
+hotkey = "<f8>"
+
+# Whisper model: tiny | base | small | medium | large-v3 | large-v3-turbo
+# Quality priority default: large-v3-turbo (strong accuracy, faster than large-v3)
+model = "large-v3-turbo"
+
+# Device: cpu | cuda | auto
+device = "cuda"
+
+# Quantization: int8 is best on CPU; float16 if you have CUDA
+compute_type = "float16"
+
+# Language: "ru", "en", or "auto" (detects Russian/English per phrase)
+language = "auto"
+
+# Optional beam size (higher = slightly better, slower). 5 is a good default.
+beam_size = 5
+
+# Notify with desktop toast on start/stop/errors
+notifications = true
+
+[audio]
+# Sample rate for Whisper
+sample_rate = 16000
+
+# pulse (PipeWire/PulseAudio) or alsa
+backend = "pulse"
+device_name = "default"

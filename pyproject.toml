@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-type"
+version = "0.1.0"
+description = "Offline voice dictation for Linux (X11)"
+requires-python = ">=3.10"
+dependencies = [
+  "faster-whisper>=1.1.0",
+  "numpy>=1.26.0",
+  "pynput>=1.7.7",
+  "pystray>=0.19.5",
+  "Pillow>=10.0.0",
+  "nvidia-cublas-cu12",
+  "nvidia-cudnn-cu12",
+  "nvidia-cuda-runtime-cu12",
+]
+
+[project.scripts]
+voice-type = "voice_type.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["voice_type*"]
