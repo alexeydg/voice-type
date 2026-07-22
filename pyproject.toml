@@ -7,6 +7,7 @@ name = "voice-type"
 version = "0.1.0"
 description = "Offline voice dictation for Linux (X11)"
 requires-python = ">=3.10"
+license = "MIT"
 dependencies = [
   "faster-whisper>=1.1.0",
   "numpy>=1.26.0",

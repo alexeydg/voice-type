@@ -72,6 +72,11 @@ cp ~/.local/share/applications/voice-type.desktop ~/.config/autostart/
 
 Or enable Voice Type in your desktop environment’s startup applications.
 
+## License
+
+This project is free and open source under the [MIT License](LICENSE).  
+You may use, copy, modify, and distribute it freely.
+
 ---
 
 ## На русском
@@ -96,3 +101,7 @@ Or enable Voice Type in your desktop environment’s startup applications.
 6. Ждёт следующего **F8**
 
 Настройки: `~/.config/voice-type/config.toml`
+
+### Лицензия
+
+Свободно распространяется по лицензии [MIT](LICENSE): можно использовать, копировать, изменять и распространять.
